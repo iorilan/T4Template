@@ -1,0 +1,2327 @@
+﻿
+USE [Analytics]
+GO
+
+
+
+-- 1. disable index
+
+DECLARE	@disable_index_value int
+EXEC	@disable_index_value = [dbo].[SP_VEHICLE_TRACKING_Index_Disable]
+SELECT	'disable_index_value' = @disable_index_value
+
+-- 2. insert data
+
+
+
+DECLARE	@result_20170217 int
+EXEC	@result_20170217 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-17 00:00:00',
+		@DataEndDateLocal = '2017-02-17 23:59:59'
+
+SELECT	'Return Value _20170217' = @result_20170217
+---------------------------
+
+
+DECLARE	@result_20170218 int
+EXEC	@result_20170218 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-18 00:00:00',
+		@DataEndDateLocal = '2017-02-18 23:59:59'
+
+SELECT	'Return Value _20170218' = @result_20170218
+---------------------------
+
+
+DECLARE	@result_20170219 int
+EXEC	@result_20170219 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-19 00:00:00',
+		@DataEndDateLocal = '2017-02-19 23:59:59'
+
+SELECT	'Return Value _20170219' = @result_20170219
+---------------------------
+
+
+DECLARE	@result_20170220 int
+EXEC	@result_20170220 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-20 00:00:00',
+		@DataEndDateLocal = '2017-02-20 23:59:59'
+
+SELECT	'Return Value _20170220' = @result_20170220
+---------------------------
+
+
+DECLARE	@result_20170221 int
+EXEC	@result_20170221 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-21 00:00:00',
+		@DataEndDateLocal = '2017-02-21 23:59:59'
+
+SELECT	'Return Value _20170221' = @result_20170221
+---------------------------
+
+
+DECLARE	@result_20170222 int
+EXEC	@result_20170222 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-22 00:00:00',
+		@DataEndDateLocal = '2017-02-22 23:59:59'
+
+SELECT	'Return Value _20170222' = @result_20170222
+---------------------------
+
+
+DECLARE	@result_20170223 int
+EXEC	@result_20170223 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-23 00:00:00',
+		@DataEndDateLocal = '2017-02-23 23:59:59'
+
+SELECT	'Return Value _20170223' = @result_20170223
+---------------------------
+
+
+DECLARE	@result_20170224 int
+EXEC	@result_20170224 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-24 00:00:00',
+		@DataEndDateLocal = '2017-02-24 23:59:59'
+
+SELECT	'Return Value _20170224' = @result_20170224
+---------------------------
+
+
+DECLARE	@result_20170225 int
+EXEC	@result_20170225 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-25 00:00:00',
+		@DataEndDateLocal = '2017-02-25 23:59:59'
+
+SELECT	'Return Value _20170225' = @result_20170225
+---------------------------
+
+
+DECLARE	@result_20170226 int
+EXEC	@result_20170226 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-26 00:00:00',
+		@DataEndDateLocal = '2017-02-26 23:59:59'
+
+SELECT	'Return Value _20170226' = @result_20170226
+---------------------------
+
+
+DECLARE	@result_20170227 int
+EXEC	@result_20170227 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-27 00:00:00',
+		@DataEndDateLocal = '2017-02-27 23:59:59'
+
+SELECT	'Return Value _20170227' = @result_20170227
+---------------------------
+
+
+DECLARE	@result_20170228 int
+EXEC	@result_20170228 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-02-28 00:00:00',
+		@DataEndDateLocal = '2017-02-28 23:59:59'
+
+SELECT	'Return Value _20170228' = @result_20170228
+---------------------------
+
+
+DECLARE	@result_20170301 int
+EXEC	@result_20170301 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-01 00:00:00',
+		@DataEndDateLocal = '2017-03-01 23:59:59'
+
+SELECT	'Return Value _20170301' = @result_20170301
+---------------------------
+
+
+DECLARE	@result_20170302 int
+EXEC	@result_20170302 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-02 00:00:00',
+		@DataEndDateLocal = '2017-03-02 23:59:59'
+
+SELECT	'Return Value _20170302' = @result_20170302
+---------------------------
+
+
+DECLARE	@result_20170303 int
+EXEC	@result_20170303 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-03 00:00:00',
+		@DataEndDateLocal = '2017-03-03 23:59:59'
+
+SELECT	'Return Value _20170303' = @result_20170303
+---------------------------
+
+
+DECLARE	@result_20170304 int
+EXEC	@result_20170304 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-04 00:00:00',
+		@DataEndDateLocal = '2017-03-04 23:59:59'
+
+SELECT	'Return Value _20170304' = @result_20170304
+---------------------------
+
+
+DECLARE	@result_20170305 int
+EXEC	@result_20170305 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-05 00:00:00',
+		@DataEndDateLocal = '2017-03-05 23:59:59'
+
+SELECT	'Return Value _20170305' = @result_20170305
+---------------------------
+
+
+DECLARE	@result_20170306 int
+EXEC	@result_20170306 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-06 00:00:00',
+		@DataEndDateLocal = '2017-03-06 23:59:59'
+
+SELECT	'Return Value _20170306' = @result_20170306
+---------------------------
+
+
+DECLARE	@result_20170307 int
+EXEC	@result_20170307 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-07 00:00:00',
+		@DataEndDateLocal = '2017-03-07 23:59:59'
+
+SELECT	'Return Value _20170307' = @result_20170307
+---------------------------
+
+
+DECLARE	@result_20170308 int
+EXEC	@result_20170308 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-08 00:00:00',
+		@DataEndDateLocal = '2017-03-08 23:59:59'
+
+SELECT	'Return Value _20170308' = @result_20170308
+---------------------------
+
+
+DECLARE	@result_20170309 int
+EXEC	@result_20170309 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-09 00:00:00',
+		@DataEndDateLocal = '2017-03-09 23:59:59'
+
+SELECT	'Return Value _20170309' = @result_20170309
+---------------------------
+
+
+DECLARE	@result_20170310 int
+EXEC	@result_20170310 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-10 00:00:00',
+		@DataEndDateLocal = '2017-03-10 23:59:59'
+
+SELECT	'Return Value _20170310' = @result_20170310
+---------------------------
+
+
+DECLARE	@result_20170311 int
+EXEC	@result_20170311 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-11 00:00:00',
+		@DataEndDateLocal = '2017-03-11 23:59:59'
+
+SELECT	'Return Value _20170311' = @result_20170311
+---------------------------
+
+
+DECLARE	@result_20170312 int
+EXEC	@result_20170312 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-12 00:00:00',
+		@DataEndDateLocal = '2017-03-12 23:59:59'
+
+SELECT	'Return Value _20170312' = @result_20170312
+---------------------------
+
+
+DECLARE	@result_20170313 int
+EXEC	@result_20170313 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-13 00:00:00',
+		@DataEndDateLocal = '2017-03-13 23:59:59'
+
+SELECT	'Return Value _20170313' = @result_20170313
+---------------------------
+
+
+DECLARE	@result_20170314 int
+EXEC	@result_20170314 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-14 00:00:00',
+		@DataEndDateLocal = '2017-03-14 23:59:59'
+
+SELECT	'Return Value _20170314' = @result_20170314
+---------------------------
+
+
+DECLARE	@result_20170315 int
+EXEC	@result_20170315 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-15 00:00:00',
+		@DataEndDateLocal = '2017-03-15 23:59:59'
+
+SELECT	'Return Value _20170315' = @result_20170315
+---------------------------
+
+
+DECLARE	@result_20170316 int
+EXEC	@result_20170316 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-16 00:00:00',
+		@DataEndDateLocal = '2017-03-16 23:59:59'
+
+SELECT	'Return Value _20170316' = @result_20170316
+---------------------------
+
+
+DECLARE	@result_20170317 int
+EXEC	@result_20170317 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-17 00:00:00',
+		@DataEndDateLocal = '2017-03-17 23:59:59'
+
+SELECT	'Return Value _20170317' = @result_20170317
+---------------------------
+
+
+DECLARE	@result_20170318 int
+EXEC	@result_20170318 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-18 00:00:00',
+		@DataEndDateLocal = '2017-03-18 23:59:59'
+
+SELECT	'Return Value _20170318' = @result_20170318
+---------------------------
+
+
+DECLARE	@result_20170319 int
+EXEC	@result_20170319 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-19 00:00:00',
+		@DataEndDateLocal = '2017-03-19 23:59:59'
+
+SELECT	'Return Value _20170319' = @result_20170319
+---------------------------
+
+
+DECLARE	@result_20170320 int
+EXEC	@result_20170320 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-20 00:00:00',
+		@DataEndDateLocal = '2017-03-20 23:59:59'
+
+SELECT	'Return Value _20170320' = @result_20170320
+---------------------------
+
+
+DECLARE	@result_20170321 int
+EXEC	@result_20170321 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-21 00:00:00',
+		@DataEndDateLocal = '2017-03-21 23:59:59'
+
+SELECT	'Return Value _20170321' = @result_20170321
+---------------------------
+
+
+DECLARE	@result_20170322 int
+EXEC	@result_20170322 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-22 00:00:00',
+		@DataEndDateLocal = '2017-03-22 23:59:59'
+
+SELECT	'Return Value _20170322' = @result_20170322
+---------------------------
+
+
+DECLARE	@result_20170323 int
+EXEC	@result_20170323 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-23 00:00:00',
+		@DataEndDateLocal = '2017-03-23 23:59:59'
+
+SELECT	'Return Value _20170323' = @result_20170323
+---------------------------
+
+
+DECLARE	@result_20170324 int
+EXEC	@result_20170324 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-24 00:00:00',
+		@DataEndDateLocal = '2017-03-24 23:59:59'
+
+SELECT	'Return Value _20170324' = @result_20170324
+---------------------------
+
+
+DECLARE	@result_20170325 int
+EXEC	@result_20170325 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-25 00:00:00',
+		@DataEndDateLocal = '2017-03-25 23:59:59'
+
+SELECT	'Return Value _20170325' = @result_20170325
+---------------------------
+
+
+DECLARE	@result_20170326 int
+EXEC	@result_20170326 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-26 00:00:00',
+		@DataEndDateLocal = '2017-03-26 23:59:59'
+
+SELECT	'Return Value _20170326' = @result_20170326
+---------------------------
+
+
+DECLARE	@result_20170327 int
+EXEC	@result_20170327 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-27 00:00:00',
+		@DataEndDateLocal = '2017-03-27 23:59:59'
+
+SELECT	'Return Value _20170327' = @result_20170327
+---------------------------
+
+
+DECLARE	@result_20170328 int
+EXEC	@result_20170328 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-28 00:00:00',
+		@DataEndDateLocal = '2017-03-28 23:59:59'
+
+SELECT	'Return Value _20170328' = @result_20170328
+---------------------------
+
+
+DECLARE	@result_20170329 int
+EXEC	@result_20170329 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-29 00:00:00',
+		@DataEndDateLocal = '2017-03-29 23:59:59'
+
+SELECT	'Return Value _20170329' = @result_20170329
+---------------------------
+
+
+DECLARE	@result_20170330 int
+EXEC	@result_20170330 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-30 00:00:00',
+		@DataEndDateLocal = '2017-03-30 23:59:59'
+
+SELECT	'Return Value _20170330' = @result_20170330
+---------------------------
+
+
+DECLARE	@result_20170331 int
+EXEC	@result_20170331 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-03-31 00:00:00',
+		@DataEndDateLocal = '2017-03-31 23:59:59'
+
+SELECT	'Return Value _20170331' = @result_20170331
+---------------------------
+
+
+DECLARE	@result_20170401 int
+EXEC	@result_20170401 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-01 00:00:00',
+		@DataEndDateLocal = '2017-04-01 23:59:59'
+
+SELECT	'Return Value _20170401' = @result_20170401
+---------------------------
+
+
+DECLARE	@result_20170402 int
+EXEC	@result_20170402 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-02 00:00:00',
+		@DataEndDateLocal = '2017-04-02 23:59:59'
+
+SELECT	'Return Value _20170402' = @result_20170402
+---------------------------
+
+
+DECLARE	@result_20170403 int
+EXEC	@result_20170403 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-03 00:00:00',
+		@DataEndDateLocal = '2017-04-03 23:59:59'
+
+SELECT	'Return Value _20170403' = @result_20170403
+---------------------------
+
+
+DECLARE	@result_20170404 int
+EXEC	@result_20170404 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-04 00:00:00',
+		@DataEndDateLocal = '2017-04-04 23:59:59'
+
+SELECT	'Return Value _20170404' = @result_20170404
+---------------------------
+
+
+DECLARE	@result_20170405 int
+EXEC	@result_20170405 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-05 00:00:00',
+		@DataEndDateLocal = '2017-04-05 23:59:59'
+
+SELECT	'Return Value _20170405' = @result_20170405
+---------------------------
+
+
+DECLARE	@result_20170406 int
+EXEC	@result_20170406 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-06 00:00:00',
+		@DataEndDateLocal = '2017-04-06 23:59:59'
+
+SELECT	'Return Value _20170406' = @result_20170406
+---------------------------
+
+
+DECLARE	@result_20170407 int
+EXEC	@result_20170407 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-07 00:00:00',
+		@DataEndDateLocal = '2017-04-07 23:59:59'
+
+SELECT	'Return Value _20170407' = @result_20170407
+---------------------------
+
+
+DECLARE	@result_20170408 int
+EXEC	@result_20170408 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-08 00:00:00',
+		@DataEndDateLocal = '2017-04-08 23:59:59'
+
+SELECT	'Return Value _20170408' = @result_20170408
+---------------------------
+
+
+DECLARE	@result_20170409 int
+EXEC	@result_20170409 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-09 00:00:00',
+		@DataEndDateLocal = '2017-04-09 23:59:59'
+
+SELECT	'Return Value _20170409' = @result_20170409
+---------------------------
+
+
+DECLARE	@result_20170410 int
+EXEC	@result_20170410 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-10 00:00:00',
+		@DataEndDateLocal = '2017-04-10 23:59:59'
+
+SELECT	'Return Value _20170410' = @result_20170410
+---------------------------
+
+
+DECLARE	@result_20170411 int
+EXEC	@result_20170411 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-11 00:00:00',
+		@DataEndDateLocal = '2017-04-11 23:59:59'
+
+SELECT	'Return Value _20170411' = @result_20170411
+---------------------------
+
+
+DECLARE	@result_20170412 int
+EXEC	@result_20170412 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-12 00:00:00',
+		@DataEndDateLocal = '2017-04-12 23:59:59'
+
+SELECT	'Return Value _20170412' = @result_20170412
+---------------------------
+
+
+DECLARE	@result_20170413 int
+EXEC	@result_20170413 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-13 00:00:00',
+		@DataEndDateLocal = '2017-04-13 23:59:59'
+
+SELECT	'Return Value _20170413' = @result_20170413
+---------------------------
+
+
+DECLARE	@result_20170414 int
+EXEC	@result_20170414 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-14 00:00:00',
+		@DataEndDateLocal = '2017-04-14 23:59:59'
+
+SELECT	'Return Value _20170414' = @result_20170414
+---------------------------
+
+
+DECLARE	@result_20170415 int
+EXEC	@result_20170415 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-15 00:00:00',
+		@DataEndDateLocal = '2017-04-15 23:59:59'
+
+SELECT	'Return Value _20170415' = @result_20170415
+---------------------------
+
+
+DECLARE	@result_20170416 int
+EXEC	@result_20170416 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-16 00:00:00',
+		@DataEndDateLocal = '2017-04-16 23:59:59'
+
+SELECT	'Return Value _20170416' = @result_20170416
+---------------------------
+
+
+DECLARE	@result_20170417 int
+EXEC	@result_20170417 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-17 00:00:00',
+		@DataEndDateLocal = '2017-04-17 23:59:59'
+
+SELECT	'Return Value _20170417' = @result_20170417
+---------------------------
+
+
+DECLARE	@result_20170418 int
+EXEC	@result_20170418 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-18 00:00:00',
+		@DataEndDateLocal = '2017-04-18 23:59:59'
+
+SELECT	'Return Value _20170418' = @result_20170418
+---------------------------
+
+
+DECLARE	@result_20170419 int
+EXEC	@result_20170419 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-19 00:00:00',
+		@DataEndDateLocal = '2017-04-19 23:59:59'
+
+SELECT	'Return Value _20170419' = @result_20170419
+---------------------------
+
+
+DECLARE	@result_20170420 int
+EXEC	@result_20170420 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-20 00:00:00',
+		@DataEndDateLocal = '2017-04-20 23:59:59'
+
+SELECT	'Return Value _20170420' = @result_20170420
+---------------------------
+
+
+DECLARE	@result_20170421 int
+EXEC	@result_20170421 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-21 00:00:00',
+		@DataEndDateLocal = '2017-04-21 23:59:59'
+
+SELECT	'Return Value _20170421' = @result_20170421
+---------------------------
+
+
+DECLARE	@result_20170422 int
+EXEC	@result_20170422 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-22 00:00:00',
+		@DataEndDateLocal = '2017-04-22 23:59:59'
+
+SELECT	'Return Value _20170422' = @result_20170422
+---------------------------
+
+
+DECLARE	@result_20170423 int
+EXEC	@result_20170423 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-23 00:00:00',
+		@DataEndDateLocal = '2017-04-23 23:59:59'
+
+SELECT	'Return Value _20170423' = @result_20170423
+---------------------------
+
+
+DECLARE	@result_20170424 int
+EXEC	@result_20170424 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-24 00:00:00',
+		@DataEndDateLocal = '2017-04-24 23:59:59'
+
+SELECT	'Return Value _20170424' = @result_20170424
+---------------------------
+
+
+DECLARE	@result_20170425 int
+EXEC	@result_20170425 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-25 00:00:00',
+		@DataEndDateLocal = '2017-04-25 23:59:59'
+
+SELECT	'Return Value _20170425' = @result_20170425
+---------------------------
+
+
+DECLARE	@result_20170426 int
+EXEC	@result_20170426 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-26 00:00:00',
+		@DataEndDateLocal = '2017-04-26 23:59:59'
+
+SELECT	'Return Value _20170426' = @result_20170426
+---------------------------
+
+
+DECLARE	@result_20170427 int
+EXEC	@result_20170427 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-27 00:00:00',
+		@DataEndDateLocal = '2017-04-27 23:59:59'
+
+SELECT	'Return Value _20170427' = @result_20170427
+---------------------------
+
+
+DECLARE	@result_20170428 int
+EXEC	@result_20170428 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-28 00:00:00',
+		@DataEndDateLocal = '2017-04-28 23:59:59'
+
+SELECT	'Return Value _20170428' = @result_20170428
+---------------------------
+
+
+DECLARE	@result_20170429 int
+EXEC	@result_20170429 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-29 00:00:00',
+		@DataEndDateLocal = '2017-04-29 23:59:59'
+
+SELECT	'Return Value _20170429' = @result_20170429
+---------------------------
+
+
+DECLARE	@result_20170430 int
+EXEC	@result_20170430 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-04-30 00:00:00',
+		@DataEndDateLocal = '2017-04-30 23:59:59'
+
+SELECT	'Return Value _20170430' = @result_20170430
+---------------------------
+
+
+DECLARE	@result_20170501 int
+EXEC	@result_20170501 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-01 00:00:00',
+		@DataEndDateLocal = '2017-05-01 23:59:59'
+
+SELECT	'Return Value _20170501' = @result_20170501
+---------------------------
+
+
+DECLARE	@result_20170502 int
+EXEC	@result_20170502 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-02 00:00:00',
+		@DataEndDateLocal = '2017-05-02 23:59:59'
+
+SELECT	'Return Value _20170502' = @result_20170502
+---------------------------
+
+
+DECLARE	@result_20170503 int
+EXEC	@result_20170503 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-03 00:00:00',
+		@DataEndDateLocal = '2017-05-03 23:59:59'
+
+SELECT	'Return Value _20170503' = @result_20170503
+---------------------------
+
+
+DECLARE	@result_20170504 int
+EXEC	@result_20170504 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-04 00:00:00',
+		@DataEndDateLocal = '2017-05-04 23:59:59'
+
+SELECT	'Return Value _20170504' = @result_20170504
+---------------------------
+
+
+DECLARE	@result_20170505 int
+EXEC	@result_20170505 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-05 00:00:00',
+		@DataEndDateLocal = '2017-05-05 23:59:59'
+
+SELECT	'Return Value _20170505' = @result_20170505
+---------------------------
+
+
+DECLARE	@result_20170506 int
+EXEC	@result_20170506 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-06 00:00:00',
+		@DataEndDateLocal = '2017-05-06 23:59:59'
+
+SELECT	'Return Value _20170506' = @result_20170506
+---------------------------
+
+
+DECLARE	@result_20170507 int
+EXEC	@result_20170507 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-07 00:00:00',
+		@DataEndDateLocal = '2017-05-07 23:59:59'
+
+SELECT	'Return Value _20170507' = @result_20170507
+---------------------------
+
+
+DECLARE	@result_20170508 int
+EXEC	@result_20170508 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-08 00:00:00',
+		@DataEndDateLocal = '2017-05-08 23:59:59'
+
+SELECT	'Return Value _20170508' = @result_20170508
+---------------------------
+
+
+DECLARE	@result_20170509 int
+EXEC	@result_20170509 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-09 00:00:00',
+		@DataEndDateLocal = '2017-05-09 23:59:59'
+
+SELECT	'Return Value _20170509' = @result_20170509
+---------------------------
+
+
+DECLARE	@result_20170510 int
+EXEC	@result_20170510 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-10 00:00:00',
+		@DataEndDateLocal = '2017-05-10 23:59:59'
+
+SELECT	'Return Value _20170510' = @result_20170510
+---------------------------
+
+
+DECLARE	@result_20170511 int
+EXEC	@result_20170511 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-11 00:00:00',
+		@DataEndDateLocal = '2017-05-11 23:59:59'
+
+SELECT	'Return Value _20170511' = @result_20170511
+---------------------------
+
+
+DECLARE	@result_20170512 int
+EXEC	@result_20170512 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-12 00:00:00',
+		@DataEndDateLocal = '2017-05-12 23:59:59'
+
+SELECT	'Return Value _20170512' = @result_20170512
+---------------------------
+
+
+DECLARE	@result_20170513 int
+EXEC	@result_20170513 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-13 00:00:00',
+		@DataEndDateLocal = '2017-05-13 23:59:59'
+
+SELECT	'Return Value _20170513' = @result_20170513
+---------------------------
+
+
+DECLARE	@result_20170514 int
+EXEC	@result_20170514 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-14 00:00:00',
+		@DataEndDateLocal = '2017-05-14 23:59:59'
+
+SELECT	'Return Value _20170514' = @result_20170514
+---------------------------
+
+
+DECLARE	@result_20170515 int
+EXEC	@result_20170515 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-15 00:00:00',
+		@DataEndDateLocal = '2017-05-15 23:59:59'
+
+SELECT	'Return Value _20170515' = @result_20170515
+---------------------------
+
+
+DECLARE	@result_20170516 int
+EXEC	@result_20170516 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-16 00:00:00',
+		@DataEndDateLocal = '2017-05-16 23:59:59'
+
+SELECT	'Return Value _20170516' = @result_20170516
+---------------------------
+
+
+DECLARE	@result_20170517 int
+EXEC	@result_20170517 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-17 00:00:00',
+		@DataEndDateLocal = '2017-05-17 23:59:59'
+
+SELECT	'Return Value _20170517' = @result_20170517
+---------------------------
+
+
+DECLARE	@result_20170518 int
+EXEC	@result_20170518 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-18 00:00:00',
+		@DataEndDateLocal = '2017-05-18 23:59:59'
+
+SELECT	'Return Value _20170518' = @result_20170518
+---------------------------
+
+
+DECLARE	@result_20170519 int
+EXEC	@result_20170519 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-19 00:00:00',
+		@DataEndDateLocal = '2017-05-19 23:59:59'
+
+SELECT	'Return Value _20170519' = @result_20170519
+---------------------------
+
+
+DECLARE	@result_20170520 int
+EXEC	@result_20170520 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-20 00:00:00',
+		@DataEndDateLocal = '2017-05-20 23:59:59'
+
+SELECT	'Return Value _20170520' = @result_20170520
+---------------------------
+
+
+DECLARE	@result_20170521 int
+EXEC	@result_20170521 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-21 00:00:00',
+		@DataEndDateLocal = '2017-05-21 23:59:59'
+
+SELECT	'Return Value _20170521' = @result_20170521
+---------------------------
+
+
+DECLARE	@result_20170522 int
+EXEC	@result_20170522 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-22 00:00:00',
+		@DataEndDateLocal = '2017-05-22 23:59:59'
+
+SELECT	'Return Value _20170522' = @result_20170522
+---------------------------
+
+
+DECLARE	@result_20170523 int
+EXEC	@result_20170523 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-23 00:00:00',
+		@DataEndDateLocal = '2017-05-23 23:59:59'
+
+SELECT	'Return Value _20170523' = @result_20170523
+---------------------------
+
+
+DECLARE	@result_20170524 int
+EXEC	@result_20170524 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-24 00:00:00',
+		@DataEndDateLocal = '2017-05-24 23:59:59'
+
+SELECT	'Return Value _20170524' = @result_20170524
+---------------------------
+
+
+DECLARE	@result_20170525 int
+EXEC	@result_20170525 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-25 00:00:00',
+		@DataEndDateLocal = '2017-05-25 23:59:59'
+
+SELECT	'Return Value _20170525' = @result_20170525
+---------------------------
+
+
+DECLARE	@result_20170526 int
+EXEC	@result_20170526 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-26 00:00:00',
+		@DataEndDateLocal = '2017-05-26 23:59:59'
+
+SELECT	'Return Value _20170526' = @result_20170526
+---------------------------
+
+
+DECLARE	@result_20170527 int
+EXEC	@result_20170527 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-27 00:00:00',
+		@DataEndDateLocal = '2017-05-27 23:59:59'
+
+SELECT	'Return Value _20170527' = @result_20170527
+---------------------------
+
+
+DECLARE	@result_20170528 int
+EXEC	@result_20170528 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-28 00:00:00',
+		@DataEndDateLocal = '2017-05-28 23:59:59'
+
+SELECT	'Return Value _20170528' = @result_20170528
+---------------------------
+
+
+DECLARE	@result_20170529 int
+EXEC	@result_20170529 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-29 00:00:00',
+		@DataEndDateLocal = '2017-05-29 23:59:59'
+
+SELECT	'Return Value _20170529' = @result_20170529
+---------------------------
+
+
+DECLARE	@result_20170530 int
+EXEC	@result_20170530 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-30 00:00:00',
+		@DataEndDateLocal = '2017-05-30 23:59:59'
+
+SELECT	'Return Value _20170530' = @result_20170530
+---------------------------
+
+
+DECLARE	@result_20170531 int
+EXEC	@result_20170531 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-05-31 00:00:00',
+		@DataEndDateLocal = '2017-05-31 23:59:59'
+
+SELECT	'Return Value _20170531' = @result_20170531
+---------------------------
+
+
+DECLARE	@result_20170601 int
+EXEC	@result_20170601 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-01 00:00:00',
+		@DataEndDateLocal = '2017-06-01 23:59:59'
+
+SELECT	'Return Value _20170601' = @result_20170601
+---------------------------
+
+
+DECLARE	@result_20170602 int
+EXEC	@result_20170602 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-02 00:00:00',
+		@DataEndDateLocal = '2017-06-02 23:59:59'
+
+SELECT	'Return Value _20170602' = @result_20170602
+---------------------------
+
+
+DECLARE	@result_20170603 int
+EXEC	@result_20170603 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-03 00:00:00',
+		@DataEndDateLocal = '2017-06-03 23:59:59'
+
+SELECT	'Return Value _20170603' = @result_20170603
+---------------------------
+
+
+DECLARE	@result_20170604 int
+EXEC	@result_20170604 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-04 00:00:00',
+		@DataEndDateLocal = '2017-06-04 23:59:59'
+
+SELECT	'Return Value _20170604' = @result_20170604
+---------------------------
+
+
+DECLARE	@result_20170605 int
+EXEC	@result_20170605 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-05 00:00:00',
+		@DataEndDateLocal = '2017-06-05 23:59:59'
+
+SELECT	'Return Value _20170605' = @result_20170605
+---------------------------
+
+
+DECLARE	@result_20170606 int
+EXEC	@result_20170606 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-06 00:00:00',
+		@DataEndDateLocal = '2017-06-06 23:59:59'
+
+SELECT	'Return Value _20170606' = @result_20170606
+---------------------------
+
+
+DECLARE	@result_20170607 int
+EXEC	@result_20170607 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-07 00:00:00',
+		@DataEndDateLocal = '2017-06-07 23:59:59'
+
+SELECT	'Return Value _20170607' = @result_20170607
+---------------------------
+
+
+DECLARE	@result_20170608 int
+EXEC	@result_20170608 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-08 00:00:00',
+		@DataEndDateLocal = '2017-06-08 23:59:59'
+
+SELECT	'Return Value _20170608' = @result_20170608
+---------------------------
+
+
+DECLARE	@result_20170609 int
+EXEC	@result_20170609 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-09 00:00:00',
+		@DataEndDateLocal = '2017-06-09 23:59:59'
+
+SELECT	'Return Value _20170609' = @result_20170609
+---------------------------
+
+
+DECLARE	@result_20170610 int
+EXEC	@result_20170610 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-10 00:00:00',
+		@DataEndDateLocal = '2017-06-10 23:59:59'
+
+SELECT	'Return Value _20170610' = @result_20170610
+---------------------------
+
+
+DECLARE	@result_20170611 int
+EXEC	@result_20170611 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-11 00:00:00',
+		@DataEndDateLocal = '2017-06-11 23:59:59'
+
+SELECT	'Return Value _20170611' = @result_20170611
+---------------------------
+
+
+DECLARE	@result_20170612 int
+EXEC	@result_20170612 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-12 00:00:00',
+		@DataEndDateLocal = '2017-06-12 23:59:59'
+
+SELECT	'Return Value _20170612' = @result_20170612
+---------------------------
+
+
+DECLARE	@result_20170613 int
+EXEC	@result_20170613 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-13 00:00:00',
+		@DataEndDateLocal = '2017-06-13 23:59:59'
+
+SELECT	'Return Value _20170613' = @result_20170613
+---------------------------
+
+
+DECLARE	@result_20170614 int
+EXEC	@result_20170614 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-14 00:00:00',
+		@DataEndDateLocal = '2017-06-14 23:59:59'
+
+SELECT	'Return Value _20170614' = @result_20170614
+---------------------------
+
+
+DECLARE	@result_20170615 int
+EXEC	@result_20170615 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-15 00:00:00',
+		@DataEndDateLocal = '2017-06-15 23:59:59'
+
+SELECT	'Return Value _20170615' = @result_20170615
+---------------------------
+
+
+DECLARE	@result_20170616 int
+EXEC	@result_20170616 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-16 00:00:00',
+		@DataEndDateLocal = '2017-06-16 23:59:59'
+
+SELECT	'Return Value _20170616' = @result_20170616
+---------------------------
+
+
+DECLARE	@result_20170617 int
+EXEC	@result_20170617 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-17 00:00:00',
+		@DataEndDateLocal = '2017-06-17 23:59:59'
+
+SELECT	'Return Value _20170617' = @result_20170617
+---------------------------
+
+
+DECLARE	@result_20170618 int
+EXEC	@result_20170618 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-18 00:00:00',
+		@DataEndDateLocal = '2017-06-18 23:59:59'
+
+SELECT	'Return Value _20170618' = @result_20170618
+---------------------------
+
+
+DECLARE	@result_20170619 int
+EXEC	@result_20170619 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-19 00:00:00',
+		@DataEndDateLocal = '2017-06-19 23:59:59'
+
+SELECT	'Return Value _20170619' = @result_20170619
+---------------------------
+
+
+DECLARE	@result_20170620 int
+EXEC	@result_20170620 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-20 00:00:00',
+		@DataEndDateLocal = '2017-06-20 23:59:59'
+
+SELECT	'Return Value _20170620' = @result_20170620
+---------------------------
+
+
+DECLARE	@result_20170621 int
+EXEC	@result_20170621 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-21 00:00:00',
+		@DataEndDateLocal = '2017-06-21 23:59:59'
+
+SELECT	'Return Value _20170621' = @result_20170621
+---------------------------
+
+
+DECLARE	@result_20170622 int
+EXEC	@result_20170622 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-22 00:00:00',
+		@DataEndDateLocal = '2017-06-22 23:59:59'
+
+SELECT	'Return Value _20170622' = @result_20170622
+---------------------------
+
+
+DECLARE	@result_20170623 int
+EXEC	@result_20170623 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-23 00:00:00',
+		@DataEndDateLocal = '2017-06-23 23:59:59'
+
+SELECT	'Return Value _20170623' = @result_20170623
+---------------------------
+
+
+DECLARE	@result_20170624 int
+EXEC	@result_20170624 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-24 00:00:00',
+		@DataEndDateLocal = '2017-06-24 23:59:59'
+
+SELECT	'Return Value _20170624' = @result_20170624
+---------------------------
+
+
+DECLARE	@result_20170625 int
+EXEC	@result_20170625 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-25 00:00:00',
+		@DataEndDateLocal = '2017-06-25 23:59:59'
+
+SELECT	'Return Value _20170625' = @result_20170625
+---------------------------
+
+
+DECLARE	@result_20170626 int
+EXEC	@result_20170626 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-26 00:00:00',
+		@DataEndDateLocal = '2017-06-26 23:59:59'
+
+SELECT	'Return Value _20170626' = @result_20170626
+---------------------------
+
+
+DECLARE	@result_20170627 int
+EXEC	@result_20170627 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-27 00:00:00',
+		@DataEndDateLocal = '2017-06-27 23:59:59'
+
+SELECT	'Return Value _20170627' = @result_20170627
+---------------------------
+
+
+DECLARE	@result_20170628 int
+EXEC	@result_20170628 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-28 00:00:00',
+		@DataEndDateLocal = '2017-06-28 23:59:59'
+
+SELECT	'Return Value _20170628' = @result_20170628
+---------------------------
+
+
+DECLARE	@result_20170629 int
+EXEC	@result_20170629 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-29 00:00:00',
+		@DataEndDateLocal = '2017-06-29 23:59:59'
+
+SELECT	'Return Value _20170629' = @result_20170629
+---------------------------
+
+
+DECLARE	@result_20170630 int
+EXEC	@result_20170630 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-06-30 00:00:00',
+		@DataEndDateLocal = '2017-06-30 23:59:59'
+
+SELECT	'Return Value _20170630' = @result_20170630
+---------------------------
+
+
+DECLARE	@result_20170701 int
+EXEC	@result_20170701 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-01 00:00:00',
+		@DataEndDateLocal = '2017-07-01 23:59:59'
+
+SELECT	'Return Value _20170701' = @result_20170701
+---------------------------
+
+
+DECLARE	@result_20170702 int
+EXEC	@result_20170702 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-02 00:00:00',
+		@DataEndDateLocal = '2017-07-02 23:59:59'
+
+SELECT	'Return Value _20170702' = @result_20170702
+---------------------------
+
+
+DECLARE	@result_20170703 int
+EXEC	@result_20170703 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-03 00:00:00',
+		@DataEndDateLocal = '2017-07-03 23:59:59'
+
+SELECT	'Return Value _20170703' = @result_20170703
+---------------------------
+
+
+DECLARE	@result_20170704 int
+EXEC	@result_20170704 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-04 00:00:00',
+		@DataEndDateLocal = '2017-07-04 23:59:59'
+
+SELECT	'Return Value _20170704' = @result_20170704
+---------------------------
+
+
+DECLARE	@result_20170705 int
+EXEC	@result_20170705 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-05 00:00:00',
+		@DataEndDateLocal = '2017-07-05 23:59:59'
+
+SELECT	'Return Value _20170705' = @result_20170705
+---------------------------
+
+
+DECLARE	@result_20170706 int
+EXEC	@result_20170706 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-06 00:00:00',
+		@DataEndDateLocal = '2017-07-06 23:59:59'
+
+SELECT	'Return Value _20170706' = @result_20170706
+---------------------------
+
+
+DECLARE	@result_20170707 int
+EXEC	@result_20170707 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-07 00:00:00',
+		@DataEndDateLocal = '2017-07-07 23:59:59'
+
+SELECT	'Return Value _20170707' = @result_20170707
+---------------------------
+
+
+DECLARE	@result_20170708 int
+EXEC	@result_20170708 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-08 00:00:00',
+		@DataEndDateLocal = '2017-07-08 23:59:59'
+
+SELECT	'Return Value _20170708' = @result_20170708
+---------------------------
+
+
+DECLARE	@result_20170709 int
+EXEC	@result_20170709 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-09 00:00:00',
+		@DataEndDateLocal = '2017-07-09 23:59:59'
+
+SELECT	'Return Value _20170709' = @result_20170709
+---------------------------
+
+
+DECLARE	@result_20170710 int
+EXEC	@result_20170710 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-10 00:00:00',
+		@DataEndDateLocal = '2017-07-10 23:59:59'
+
+SELECT	'Return Value _20170710' = @result_20170710
+---------------------------
+
+
+DECLARE	@result_20170711 int
+EXEC	@result_20170711 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-11 00:00:00',
+		@DataEndDateLocal = '2017-07-11 23:59:59'
+
+SELECT	'Return Value _20170711' = @result_20170711
+---------------------------
+
+
+DECLARE	@result_20170712 int
+EXEC	@result_20170712 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-12 00:00:00',
+		@DataEndDateLocal = '2017-07-12 23:59:59'
+
+SELECT	'Return Value _20170712' = @result_20170712
+---------------------------
+
+
+DECLARE	@result_20170713 int
+EXEC	@result_20170713 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-13 00:00:00',
+		@DataEndDateLocal = '2017-07-13 23:59:59'
+
+SELECT	'Return Value _20170713' = @result_20170713
+---------------------------
+
+
+DECLARE	@result_20170714 int
+EXEC	@result_20170714 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-14 00:00:00',
+		@DataEndDateLocal = '2017-07-14 23:59:59'
+
+SELECT	'Return Value _20170714' = @result_20170714
+---------------------------
+
+
+DECLARE	@result_20170715 int
+EXEC	@result_20170715 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-15 00:00:00',
+		@DataEndDateLocal = '2017-07-15 23:59:59'
+
+SELECT	'Return Value _20170715' = @result_20170715
+---------------------------
+
+
+DECLARE	@result_20170716 int
+EXEC	@result_20170716 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-16 00:00:00',
+		@DataEndDateLocal = '2017-07-16 23:59:59'
+
+SELECT	'Return Value _20170716' = @result_20170716
+---------------------------
+
+
+DECLARE	@result_20170717 int
+EXEC	@result_20170717 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-17 00:00:00',
+		@DataEndDateLocal = '2017-07-17 23:59:59'
+
+SELECT	'Return Value _20170717' = @result_20170717
+---------------------------
+
+
+DECLARE	@result_20170718 int
+EXEC	@result_20170718 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-18 00:00:00',
+		@DataEndDateLocal = '2017-07-18 23:59:59'
+
+SELECT	'Return Value _20170718' = @result_20170718
+---------------------------
+
+
+DECLARE	@result_20170719 int
+EXEC	@result_20170719 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-19 00:00:00',
+		@DataEndDateLocal = '2017-07-19 23:59:59'
+
+SELECT	'Return Value _20170719' = @result_20170719
+---------------------------
+
+
+DECLARE	@result_20170720 int
+EXEC	@result_20170720 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-20 00:00:00',
+		@DataEndDateLocal = '2017-07-20 23:59:59'
+
+SELECT	'Return Value _20170720' = @result_20170720
+---------------------------
+
+
+DECLARE	@result_20170721 int
+EXEC	@result_20170721 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-21 00:00:00',
+		@DataEndDateLocal = '2017-07-21 23:59:59'
+
+SELECT	'Return Value _20170721' = @result_20170721
+---------------------------
+
+
+DECLARE	@result_20170722 int
+EXEC	@result_20170722 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-22 00:00:00',
+		@DataEndDateLocal = '2017-07-22 23:59:59'
+
+SELECT	'Return Value _20170722' = @result_20170722
+---------------------------
+
+
+DECLARE	@result_20170723 int
+EXEC	@result_20170723 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-23 00:00:00',
+		@DataEndDateLocal = '2017-07-23 23:59:59'
+
+SELECT	'Return Value _20170723' = @result_20170723
+---------------------------
+
+
+DECLARE	@result_20170724 int
+EXEC	@result_20170724 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-24 00:00:00',
+		@DataEndDateLocal = '2017-07-24 23:59:59'
+
+SELECT	'Return Value _20170724' = @result_20170724
+---------------------------
+
+
+DECLARE	@result_20170725 int
+EXEC	@result_20170725 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-25 00:00:00',
+		@DataEndDateLocal = '2017-07-25 23:59:59'
+
+SELECT	'Return Value _20170725' = @result_20170725
+---------------------------
+
+
+DECLARE	@result_20170726 int
+EXEC	@result_20170726 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-26 00:00:00',
+		@DataEndDateLocal = '2017-07-26 23:59:59'
+
+SELECT	'Return Value _20170726' = @result_20170726
+---------------------------
+
+
+DECLARE	@result_20170727 int
+EXEC	@result_20170727 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-27 00:00:00',
+		@DataEndDateLocal = '2017-07-27 23:59:59'
+
+SELECT	'Return Value _20170727' = @result_20170727
+---------------------------
+
+
+DECLARE	@result_20170728 int
+EXEC	@result_20170728 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-28 00:00:00',
+		@DataEndDateLocal = '2017-07-28 23:59:59'
+
+SELECT	'Return Value _20170728' = @result_20170728
+---------------------------
+
+
+DECLARE	@result_20170729 int
+EXEC	@result_20170729 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-29 00:00:00',
+		@DataEndDateLocal = '2017-07-29 23:59:59'
+
+SELECT	'Return Value _20170729' = @result_20170729
+---------------------------
+
+
+DECLARE	@result_20170730 int
+EXEC	@result_20170730 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-30 00:00:00',
+		@DataEndDateLocal = '2017-07-30 23:59:59'
+
+SELECT	'Return Value _20170730' = @result_20170730
+---------------------------
+
+
+DECLARE	@result_20170731 int
+EXEC	@result_20170731 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-07-31 00:00:00',
+		@DataEndDateLocal = '2017-07-31 23:59:59'
+
+SELECT	'Return Value _20170731' = @result_20170731
+---------------------------
+
+
+DECLARE	@result_20170801 int
+EXEC	@result_20170801 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-01 00:00:00',
+		@DataEndDateLocal = '2017-08-01 23:59:59'
+
+SELECT	'Return Value _20170801' = @result_20170801
+---------------------------
+
+
+DECLARE	@result_20170802 int
+EXEC	@result_20170802 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-02 00:00:00',
+		@DataEndDateLocal = '2017-08-02 23:59:59'
+
+SELECT	'Return Value _20170802' = @result_20170802
+---------------------------
+
+
+DECLARE	@result_20170803 int
+EXEC	@result_20170803 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-03 00:00:00',
+		@DataEndDateLocal = '2017-08-03 23:59:59'
+
+SELECT	'Return Value _20170803' = @result_20170803
+---------------------------
+
+
+DECLARE	@result_20170804 int
+EXEC	@result_20170804 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-04 00:00:00',
+		@DataEndDateLocal = '2017-08-04 23:59:59'
+
+SELECT	'Return Value _20170804' = @result_20170804
+---------------------------
+
+
+DECLARE	@result_20170805 int
+EXEC	@result_20170805 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-05 00:00:00',
+		@DataEndDateLocal = '2017-08-05 23:59:59'
+
+SELECT	'Return Value _20170805' = @result_20170805
+---------------------------
+
+
+DECLARE	@result_20170806 int
+EXEC	@result_20170806 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-06 00:00:00',
+		@DataEndDateLocal = '2017-08-06 23:59:59'
+
+SELECT	'Return Value _20170806' = @result_20170806
+---------------------------
+
+
+DECLARE	@result_20170807 int
+EXEC	@result_20170807 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-07 00:00:00',
+		@DataEndDateLocal = '2017-08-07 23:59:59'
+
+SELECT	'Return Value _20170807' = @result_20170807
+---------------------------
+
+
+DECLARE	@result_20170808 int
+EXEC	@result_20170808 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-08 00:00:00',
+		@DataEndDateLocal = '2017-08-08 23:59:59'
+
+SELECT	'Return Value _20170808' = @result_20170808
+---------------------------
+
+
+DECLARE	@result_20170809 int
+EXEC	@result_20170809 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-09 00:00:00',
+		@DataEndDateLocal = '2017-08-09 23:59:59'
+
+SELECT	'Return Value _20170809' = @result_20170809
+---------------------------
+
+
+DECLARE	@result_20170810 int
+EXEC	@result_20170810 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-10 00:00:00',
+		@DataEndDateLocal = '2017-08-10 23:59:59'
+
+SELECT	'Return Value _20170810' = @result_20170810
+---------------------------
+
+
+DECLARE	@result_20170811 int
+EXEC	@result_20170811 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-11 00:00:00',
+		@DataEndDateLocal = '2017-08-11 23:59:59'
+
+SELECT	'Return Value _20170811' = @result_20170811
+---------------------------
+
+
+DECLARE	@result_20170812 int
+EXEC	@result_20170812 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-12 00:00:00',
+		@DataEndDateLocal = '2017-08-12 23:59:59'
+
+SELECT	'Return Value _20170812' = @result_20170812
+---------------------------
+
+
+DECLARE	@result_20170813 int
+EXEC	@result_20170813 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-13 00:00:00',
+		@DataEndDateLocal = '2017-08-13 23:59:59'
+
+SELECT	'Return Value _20170813' = @result_20170813
+---------------------------
+
+
+DECLARE	@result_20170814 int
+EXEC	@result_20170814 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-14 00:00:00',
+		@DataEndDateLocal = '2017-08-14 23:59:59'
+
+SELECT	'Return Value _20170814' = @result_20170814
+---------------------------
+
+
+DECLARE	@result_20170815 int
+EXEC	@result_20170815 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-15 00:00:00',
+		@DataEndDateLocal = '2017-08-15 23:59:59'
+
+SELECT	'Return Value _20170815' = @result_20170815
+---------------------------
+
+
+DECLARE	@result_20170816 int
+EXEC	@result_20170816 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-16 00:00:00',
+		@DataEndDateLocal = '2017-08-16 23:59:59'
+
+SELECT	'Return Value _20170816' = @result_20170816
+---------------------------
+
+
+DECLARE	@result_20170817 int
+EXEC	@result_20170817 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-17 00:00:00',
+		@DataEndDateLocal = '2017-08-17 23:59:59'
+
+SELECT	'Return Value _20170817' = @result_20170817
+---------------------------
+
+
+DECLARE	@result_20170818 int
+EXEC	@result_20170818 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-18 00:00:00',
+		@DataEndDateLocal = '2017-08-18 23:59:59'
+
+SELECT	'Return Value _20170818' = @result_20170818
+---------------------------
+
+
+DECLARE	@result_20170819 int
+EXEC	@result_20170819 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-19 00:00:00',
+		@DataEndDateLocal = '2017-08-19 23:59:59'
+
+SELECT	'Return Value _20170819' = @result_20170819
+---------------------------
+
+
+DECLARE	@result_20170820 int
+EXEC	@result_20170820 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-20 00:00:00',
+		@DataEndDateLocal = '2017-08-20 23:59:59'
+
+SELECT	'Return Value _20170820' = @result_20170820
+---------------------------
+
+
+DECLARE	@result_20170821 int
+EXEC	@result_20170821 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-21 00:00:00',
+		@DataEndDateLocal = '2017-08-21 23:59:59'
+
+SELECT	'Return Value _20170821' = @result_20170821
+---------------------------
+
+
+DECLARE	@result_20170822 int
+EXEC	@result_20170822 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-22 00:00:00',
+		@DataEndDateLocal = '2017-08-22 23:59:59'
+
+SELECT	'Return Value _20170822' = @result_20170822
+---------------------------
+
+
+DECLARE	@result_20170823 int
+EXEC	@result_20170823 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-23 00:00:00',
+		@DataEndDateLocal = '2017-08-23 23:59:59'
+
+SELECT	'Return Value _20170823' = @result_20170823
+---------------------------
+
+
+DECLARE	@result_20170824 int
+EXEC	@result_20170824 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-24 00:00:00',
+		@DataEndDateLocal = '2017-08-24 23:59:59'
+
+SELECT	'Return Value _20170824' = @result_20170824
+---------------------------
+
+
+DECLARE	@result_20170825 int
+EXEC	@result_20170825 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-25 00:00:00',
+		@DataEndDateLocal = '2017-08-25 23:59:59'
+
+SELECT	'Return Value _20170825' = @result_20170825
+---------------------------
+
+
+DECLARE	@result_20170826 int
+EXEC	@result_20170826 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-26 00:00:00',
+		@DataEndDateLocal = '2017-08-26 23:59:59'
+
+SELECT	'Return Value _20170826' = @result_20170826
+---------------------------
+
+
+DECLARE	@result_20170827 int
+EXEC	@result_20170827 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-27 00:00:00',
+		@DataEndDateLocal = '2017-08-27 23:59:59'
+
+SELECT	'Return Value _20170827' = @result_20170827
+---------------------------
+
+
+DECLARE	@result_20170828 int
+EXEC	@result_20170828 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-28 00:00:00',
+		@DataEndDateLocal = '2017-08-28 23:59:59'
+
+SELECT	'Return Value _20170828' = @result_20170828
+---------------------------
+
+
+DECLARE	@result_20170829 int
+EXEC	@result_20170829 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-29 00:00:00',
+		@DataEndDateLocal = '2017-08-29 23:59:59'
+
+SELECT	'Return Value _20170829' = @result_20170829
+---------------------------
+
+
+DECLARE	@result_20170830 int
+EXEC	@result_20170830 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-30 00:00:00',
+		@DataEndDateLocal = '2017-08-30 23:59:59'
+
+SELECT	'Return Value _20170830' = @result_20170830
+---------------------------
+
+
+DECLARE	@result_20170831 int
+EXEC	@result_20170831 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-08-31 00:00:00',
+		@DataEndDateLocal = '2017-08-31 23:59:59'
+
+SELECT	'Return Value _20170831' = @result_20170831
+---------------------------
+
+
+DECLARE	@result_20170901 int
+EXEC	@result_20170901 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-01 00:00:00',
+		@DataEndDateLocal = '2017-09-01 23:59:59'
+
+SELECT	'Return Value _20170901' = @result_20170901
+---------------------------
+
+
+DECLARE	@result_20170902 int
+EXEC	@result_20170902 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-02 00:00:00',
+		@DataEndDateLocal = '2017-09-02 23:59:59'
+
+SELECT	'Return Value _20170902' = @result_20170902
+---------------------------
+
+
+DECLARE	@result_20170903 int
+EXEC	@result_20170903 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-03 00:00:00',
+		@DataEndDateLocal = '2017-09-03 23:59:59'
+
+SELECT	'Return Value _20170903' = @result_20170903
+---------------------------
+
+
+DECLARE	@result_20170904 int
+EXEC	@result_20170904 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-04 00:00:00',
+		@DataEndDateLocal = '2017-09-04 23:59:59'
+
+SELECT	'Return Value _20170904' = @result_20170904
+---------------------------
+
+
+DECLARE	@result_20170905 int
+EXEC	@result_20170905 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-05 00:00:00',
+		@DataEndDateLocal = '2017-09-05 23:59:59'
+
+SELECT	'Return Value _20170905' = @result_20170905
+---------------------------
+
+
+DECLARE	@result_20170906 int
+EXEC	@result_20170906 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-06 00:00:00',
+		@DataEndDateLocal = '2017-09-06 23:59:59'
+
+SELECT	'Return Value _20170906' = @result_20170906
+---------------------------
+
+
+DECLARE	@result_20170907 int
+EXEC	@result_20170907 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-07 00:00:00',
+		@DataEndDateLocal = '2017-09-07 23:59:59'
+
+SELECT	'Return Value _20170907' = @result_20170907
+---------------------------
+
+
+DECLARE	@result_20170908 int
+EXEC	@result_20170908 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-08 00:00:00',
+		@DataEndDateLocal = '2017-09-08 23:59:59'
+
+SELECT	'Return Value _20170908' = @result_20170908
+---------------------------
+
+
+DECLARE	@result_20170909 int
+EXEC	@result_20170909 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-09 00:00:00',
+		@DataEndDateLocal = '2017-09-09 23:59:59'
+
+SELECT	'Return Value _20170909' = @result_20170909
+---------------------------
+
+
+DECLARE	@result_20170910 int
+EXEC	@result_20170910 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-10 00:00:00',
+		@DataEndDateLocal = '2017-09-10 23:59:59'
+
+SELECT	'Return Value _20170910' = @result_20170910
+---------------------------
+
+
+DECLARE	@result_20170911 int
+EXEC	@result_20170911 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-11 00:00:00',
+		@DataEndDateLocal = '2017-09-11 23:59:59'
+
+SELECT	'Return Value _20170911' = @result_20170911
+---------------------------
+
+
+DECLARE	@result_20170912 int
+EXEC	@result_20170912 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-12 00:00:00',
+		@DataEndDateLocal = '2017-09-12 23:59:59'
+
+SELECT	'Return Value _20170912' = @result_20170912
+---------------------------
+
+
+DECLARE	@result_20170913 int
+EXEC	@result_20170913 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-13 00:00:00',
+		@DataEndDateLocal = '2017-09-13 23:59:59'
+
+SELECT	'Return Value _20170913' = @result_20170913
+---------------------------
+
+
+DECLARE	@result_20170914 int
+EXEC	@result_20170914 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-14 00:00:00',
+		@DataEndDateLocal = '2017-09-14 23:59:59'
+
+SELECT	'Return Value _20170914' = @result_20170914
+---------------------------
+
+
+DECLARE	@result_20170915 int
+EXEC	@result_20170915 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-15 00:00:00',
+		@DataEndDateLocal = '2017-09-15 23:59:59'
+
+SELECT	'Return Value _20170915' = @result_20170915
+---------------------------
+
+
+DECLARE	@result_20170916 int
+EXEC	@result_20170916 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-16 00:00:00',
+		@DataEndDateLocal = '2017-09-16 23:59:59'
+
+SELECT	'Return Value _20170916' = @result_20170916
+---------------------------
+
+
+DECLARE	@result_20170917 int
+EXEC	@result_20170917 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-17 00:00:00',
+		@DataEndDateLocal = '2017-09-17 23:59:59'
+
+SELECT	'Return Value _20170917' = @result_20170917
+---------------------------
+
+
+DECLARE	@result_20170918 int
+EXEC	@result_20170918 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-18 00:00:00',
+		@DataEndDateLocal = '2017-09-18 23:59:59'
+
+SELECT	'Return Value _20170918' = @result_20170918
+---------------------------
+
+
+DECLARE	@result_20170919 int
+EXEC	@result_20170919 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-19 00:00:00',
+		@DataEndDateLocal = '2017-09-19 23:59:59'
+
+SELECT	'Return Value _20170919' = @result_20170919
+---------------------------
+
+
+DECLARE	@result_20170920 int
+EXEC	@result_20170920 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-20 00:00:00',
+		@DataEndDateLocal = '2017-09-20 23:59:59'
+
+SELECT	'Return Value _20170920' = @result_20170920
+---------------------------
+
+
+DECLARE	@result_20170921 int
+EXEC	@result_20170921 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-21 00:00:00',
+		@DataEndDateLocal = '2017-09-21 23:59:59'
+
+SELECT	'Return Value _20170921' = @result_20170921
+---------------------------
+
+
+DECLARE	@result_20170922 int
+EXEC	@result_20170922 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-22 00:00:00',
+		@DataEndDateLocal = '2017-09-22 23:59:59'
+
+SELECT	'Return Value _20170922' = @result_20170922
+---------------------------
+
+
+DECLARE	@result_20170923 int
+EXEC	@result_20170923 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-23 00:00:00',
+		@DataEndDateLocal = '2017-09-23 23:59:59'
+
+SELECT	'Return Value _20170923' = @result_20170923
+---------------------------
+
+
+DECLARE	@result_20170924 int
+EXEC	@result_20170924 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-24 00:00:00',
+		@DataEndDateLocal = '2017-09-24 23:59:59'
+
+SELECT	'Return Value _20170924' = @result_20170924
+---------------------------
+
+
+DECLARE	@result_20170925 int
+EXEC	@result_20170925 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-25 00:00:00',
+		@DataEndDateLocal = '2017-09-25 23:59:59'
+
+SELECT	'Return Value _20170925' = @result_20170925
+---------------------------
+
+
+DECLARE	@result_20170926 int
+EXEC	@result_20170926 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-26 00:00:00',
+		@DataEndDateLocal = '2017-09-26 23:59:59'
+
+SELECT	'Return Value _20170926' = @result_20170926
+---------------------------
+
+
+DECLARE	@result_20170927 int
+EXEC	@result_20170927 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-27 00:00:00',
+		@DataEndDateLocal = '2017-09-27 23:59:59'
+
+SELECT	'Return Value _20170927' = @result_20170927
+---------------------------
+
+
+DECLARE	@result_20170928 int
+EXEC	@result_20170928 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-28 00:00:00',
+		@DataEndDateLocal = '2017-09-28 23:59:59'
+
+SELECT	'Return Value _20170928' = @result_20170928
+---------------------------
+
+
+DECLARE	@result_20170929 int
+EXEC	@result_20170929 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-29 00:00:00',
+		@DataEndDateLocal = '2017-09-29 23:59:59'
+
+SELECT	'Return Value _20170929' = @result_20170929
+---------------------------
+
+
+DECLARE	@result_20170930 int
+EXEC	@result_20170930 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-09-30 00:00:00',
+		@DataEndDateLocal = '2017-09-30 23:59:59'
+
+SELECT	'Return Value _20170930' = @result_20170930
+---------------------------
+
+
+DECLARE	@result_20171001 int
+EXEC	@result_20171001 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-01 00:00:00',
+		@DataEndDateLocal = '2017-10-01 23:59:59'
+
+SELECT	'Return Value _20171001' = @result_20171001
+---------------------------
+
+
+DECLARE	@result_20171002 int
+EXEC	@result_20171002 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-02 00:00:00',
+		@DataEndDateLocal = '2017-10-02 23:59:59'
+
+SELECT	'Return Value _20171002' = @result_20171002
+---------------------------
+
+
+DECLARE	@result_20171003 int
+EXEC	@result_20171003 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-03 00:00:00',
+		@DataEndDateLocal = '2017-10-03 23:59:59'
+
+SELECT	'Return Value _20171003' = @result_20171003
+---------------------------
+
+
+DECLARE	@result_20171004 int
+EXEC	@result_20171004 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-04 00:00:00',
+		@DataEndDateLocal = '2017-10-04 23:59:59'
+
+SELECT	'Return Value _20171004' = @result_20171004
+---------------------------
+
+
+DECLARE	@result_20171005 int
+EXEC	@result_20171005 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-05 00:00:00',
+		@DataEndDateLocal = '2017-10-05 23:59:59'
+
+SELECT	'Return Value _20171005' = @result_20171005
+---------------------------
+
+
+DECLARE	@result_20171006 int
+EXEC	@result_20171006 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-06 00:00:00',
+		@DataEndDateLocal = '2017-10-06 23:59:59'
+
+SELECT	'Return Value _20171006' = @result_20171006
+---------------------------
+
+
+DECLARE	@result_20171007 int
+EXEC	@result_20171007 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-07 00:00:00',
+		@DataEndDateLocal = '2017-10-07 23:59:59'
+
+SELECT	'Return Value _20171007' = @result_20171007
+---------------------------
+
+
+DECLARE	@result_20171008 int
+EXEC	@result_20171008 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-08 00:00:00',
+		@DataEndDateLocal = '2017-10-08 23:59:59'
+
+SELECT	'Return Value _20171008' = @result_20171008
+---------------------------
+
+
+DECLARE	@result_20171009 int
+EXEC	@result_20171009 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-09 00:00:00',
+		@DataEndDateLocal = '2017-10-09 23:59:59'
+
+SELECT	'Return Value _20171009' = @result_20171009
+---------------------------
+
+
+DECLARE	@result_20171010 int
+EXEC	@result_20171010 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-10 00:00:00',
+		@DataEndDateLocal = '2017-10-10 23:59:59'
+
+SELECT	'Return Value _20171010' = @result_20171010
+---------------------------
+
+
+DECLARE	@result_20171011 int
+EXEC	@result_20171011 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-11 00:00:00',
+		@DataEndDateLocal = '2017-10-11 23:59:59'
+
+SELECT	'Return Value _20171011' = @result_20171011
+---------------------------
+
+
+DECLARE	@result_20171012 int
+EXEC	@result_20171012 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-12 00:00:00',
+		@DataEndDateLocal = '2017-10-12 23:59:59'
+
+SELECT	'Return Value _20171012' = @result_20171012
+---------------------------
+
+
+DECLARE	@result_20171013 int
+EXEC	@result_20171013 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-13 00:00:00',
+		@DataEndDateLocal = '2017-10-13 23:59:59'
+
+SELECT	'Return Value _20171013' = @result_20171013
+---------------------------
+
+
+DECLARE	@result_20171014 int
+EXEC	@result_20171014 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-14 00:00:00',
+		@DataEndDateLocal = '2017-10-14 23:59:59'
+
+SELECT	'Return Value _20171014' = @result_20171014
+---------------------------
+
+
+DECLARE	@result_20171015 int
+EXEC	@result_20171015 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-15 00:00:00',
+		@DataEndDateLocal = '2017-10-15 23:59:59'
+
+SELECT	'Return Value _20171015' = @result_20171015
+---------------------------
+
+
+DECLARE	@result_20171016 int
+EXEC	@result_20171016 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-16 00:00:00',
+		@DataEndDateLocal = '2017-10-16 23:59:59'
+
+SELECT	'Return Value _20171016' = @result_20171016
+---------------------------
+
+
+DECLARE	@result_20171017 int
+EXEC	@result_20171017 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-17 00:00:00',
+		@DataEndDateLocal = '2017-10-17 23:59:59'
+
+SELECT	'Return Value _20171017' = @result_20171017
+---------------------------
+
+
+DECLARE	@result_20171018 int
+EXEC	@result_20171018 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-18 00:00:00',
+		@DataEndDateLocal = '2017-10-18 23:59:59'
+
+SELECT	'Return Value _20171018' = @result_20171018
+---------------------------
+
+
+DECLARE	@result_20171019 int
+EXEC	@result_20171019 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-19 00:00:00',
+		@DataEndDateLocal = '2017-10-19 23:59:59'
+
+SELECT	'Return Value _20171019' = @result_20171019
+---------------------------
+
+
+DECLARE	@result_20171020 int
+EXEC	@result_20171020 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-20 00:00:00',
+		@DataEndDateLocal = '2017-10-20 23:59:59'
+
+SELECT	'Return Value _20171020' = @result_20171020
+---------------------------
+
+
+DECLARE	@result_20171021 int
+EXEC	@result_20171021 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-21 00:00:00',
+		@DataEndDateLocal = '2017-10-21 23:59:59'
+
+SELECT	'Return Value _20171021' = @result_20171021
+---------------------------
+
+
+DECLARE	@result_20171022 int
+EXEC	@result_20171022 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-22 00:00:00',
+		@DataEndDateLocal = '2017-10-22 23:59:59'
+
+SELECT	'Return Value _20171022' = @result_20171022
+---------------------------
+
+
+DECLARE	@result_20171023 int
+EXEC	@result_20171023 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-23 00:00:00',
+		@DataEndDateLocal = '2017-10-23 23:59:59'
+
+SELECT	'Return Value _20171023' = @result_20171023
+---------------------------
+
+
+DECLARE	@result_20171024 int
+EXEC	@result_20171024 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-24 00:00:00',
+		@DataEndDateLocal = '2017-10-24 23:59:59'
+
+SELECT	'Return Value _20171024' = @result_20171024
+---------------------------
+
+
+DECLARE	@result_20171025 int
+EXEC	@result_20171025 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-25 00:00:00',
+		@DataEndDateLocal = '2017-10-25 23:59:59'
+
+SELECT	'Return Value _20171025' = @result_20171025
+---------------------------
+
+
+DECLARE	@result_20171026 int
+EXEC	@result_20171026 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-26 00:00:00',
+		@DataEndDateLocal = '2017-10-26 23:59:59'
+
+SELECT	'Return Value _20171026' = @result_20171026
+---------------------------
+
+
+DECLARE	@result_20171027 int
+EXEC	@result_20171027 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-27 00:00:00',
+		@DataEndDateLocal = '2017-10-27 23:59:59'
+
+SELECT	'Return Value _20171027' = @result_20171027
+---------------------------
+
+
+DECLARE	@result_20171028 int
+EXEC	@result_20171028 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-28 00:00:00',
+		@DataEndDateLocal = '2017-10-28 23:59:59'
+
+SELECT	'Return Value _20171028' = @result_20171028
+---------------------------
+
+
+DECLARE	@result_20171029 int
+EXEC	@result_20171029 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-29 00:00:00',
+		@DataEndDateLocal = '2017-10-29 23:59:59'
+
+SELECT	'Return Value _20171029' = @result_20171029
+---------------------------
+
+
+DECLARE	@result_20171030 int
+EXEC	@result_20171030 = [dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+		@DataStartDateLocal = '2017-10-30 00:00:00',
+		@DataEndDateLocal = '2017-10-30 23:59:59'
+
+SELECT	'Return Value _20171030' = @result_20171030
+---------------------------
+
+
+
+
+
+--  3. rebuild index
+DECLARE	@rebuild_index_value int
+EXEC	@rebuild_index_value = [dbo].[SP_VEHICLE_TRACKING_Index_Rebuild]
+SELECT	'rebuild_index_value' = @rebuild_index_value

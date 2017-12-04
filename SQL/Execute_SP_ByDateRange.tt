@@ -1,0 +1,56 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".txt" #>
+
+USE [Analytics]
+GO
+
+
+<#
+var dateStart = DateTime.Parse("2017-02-17 00:00:00");
+var dateEnd = DateTime.Parse("2017-10-30 23:59:59");
+
+var spName = "[dbo].[SP_SCHEDULE_GET_BETWEEN_DATE]"; 
+//[SP_EVENT_GENERICDB_GET_BETWEEN_DATE]
+//[dbo].[SP_SCHEDULE_GET_BETWEEN_DATE],
+//[dbo].[SP_VEHICLE_TRACKING_GET_BETWEEN_DATE]
+
+var spDisableIndex = "[dbo].[SP_SCHEDULE_Index_Disable]"; // SCHEDULE ,VEHICLE_TRACKING
+var spRebuildIndex = " [dbo].[SP_SCHEDULE_Index_Rebuild]";
+
+var d = dateStart;
+
+#>
+
+-- 1. disable index
+
+DECLARE	@disable_index_value int
+EXEC	@disable_index_value = <#= spDisableIndex#>
+SELECT	'disable_index_value' = @disable_index_value
+
+-- 2. insert data
+
+
+
+<# for (;d <= dateEnd; ){ #>
+DECLARE	@result_<#= d.ToString("yyyyMMdd") #> int
+EXEC	@result_<#= d.ToString("yyyyMMdd") #> = <#= spName #>
+		@DataStartDateLocal = '<#= d.ToString("yyyy-MM-dd") + " 00:00:00" #>',
+		@DataEndDateLocal = '<#= d.ToString("yyyy-MM-dd") + " 23:59:59" #>'
+
+SELECT	'Return Value _<#= d.ToString("yyyyMMdd")#>' = @result_<#= d.ToString("yyyyMMdd") #>
+---------------------------
+
+
+<# d=d.AddDays(1); #>
+<# } #>
+
+
+
+--  3. rebuild index
+DECLARE	@rebuild_index_value int
+EXEC	@rebuild_index_value = <#= spRebuildIndex#>
+SELECT	'rebuild_index_value' = @rebuild_index_value
